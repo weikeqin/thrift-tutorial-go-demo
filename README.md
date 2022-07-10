@@ -4,8 +4,9 @@
   增加了通过idl生成gen-go的代码，可以直接运行
 
 ```shell
-cd src 
 go mod tidy
+
+cd src
  
 # 运行server  
 go run main.go server.go client.go handler.go  -server true -P binary -framed false -buffered false -addr localhost:9090 -secure false
